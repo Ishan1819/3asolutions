@@ -12,10 +12,37 @@ sentence-transformers
 scikit-learn 
 pyaudio
 streamlit
-
-
-
-
 uuid
 autogen 
 anthropic
+
+
+
+
+# FastAPI and Uvicorn
+fastapi==0.110.2
+uvicorn[standard]==0.29.0
+
+# Web scraping
+requests==2.31.0
+beautifulsoup4==4.12.3
+
+# Google Gemini SDK
+google-generativeai==0.4.1
+
+# Sentence Transformers for embeddings
+sentence-transformers==2.7.0
+torch>=1.11.0  # Required by sentence-transformers
+
+# ChromaDB for vector storage
+chromadb==0.4.24
+
+# Pydantic for data validation
+pydantic==1.10.15
+
+# Other utilities
+urllib3==2.2.1  # For SSL warning suppression
+numpy==1.26.4   # Used by sentence-transformers and ChromaDB
+uuid==1.30  # Not strictly required; included for completeness if using separately
+
+# Logging is part of Python standard library, so no need to install
