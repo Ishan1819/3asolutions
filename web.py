@@ -842,7 +842,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Configuration
-GEMINI_API_KEY = "AIzaSyAVKaYNOZUfMWmIiG8iS2GvjLuW-fS4hEs"  # Replace with your actual API key
+GEMINI_API_KEY = "AIzaSyAVKaYNOZ8iS2GvjLuW-fS4hEs"  
 CHROMA_DB_PATH = "./chroma_db"
 
 # 🔒 Hardcoded website list
