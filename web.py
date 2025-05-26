@@ -842,7 +842,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Configuration
-GEMINI_API_KEY = "AIzaSyAVKaYNOZ8iS2GvjLuW-fS4hEs"  
+GEMINI_API_KEY = "AIzaSyBxB3DuQUG2t9EuGT3Ig4MGrQk6IbX0Ou4"  
 CHROMA_DB_PATH = "./chroma_db"
 
 # 🔒 Hardcoded website list
@@ -1032,8 +1032,13 @@ def generate_response(query: str, relevant_chunks: List[str]) -> str:
     Please provide a clear and concise answer based on the context provided.
     You are an AI assistant trained to provide helpful responses about 3A Solutions company.
     If asked about how to contact the company, generate the answer and give this website link: https://3asolutions.co.in/contactus.aspx
-    If asked about careers in the company, generate the answer and give this website link: https://3asolutions.co.in/careers.aspx
-    
+    If asked about careers in the company, generate the answer and give this website link: https://3asolutions.co.in/careers.aspx.
+    If user asks you as the second person then decode it as the company and aner accordingly.
+    For example: User: What are your company's objectives?
+    In above example, 'your' referred as 3asolutions. Give the answer accordingly.
+
+    If user asks you about how are you then respond that you are fine and how can I help you today.
+    If user greets you, then greet back in a very polite way.
     If the context doesn't contain relevant information to answer the question, politely say that you don't have enough information about that specific topic in the available content.
     """
     
